@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.profilePicture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-top: 60px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.LeftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #163853;
+  width: 30%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.RightColumn {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  padding-left: 32px;
 }
 
-.card {
-  padding: 2em;
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 1600px;
 }
 
-.read-the-docs {
-  color: #888;
+.contactGroup {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  color: white;
+}
+
+.contactGroup > p {
+  margin-left: 8px;
+}
+
+.contactHeading {
+  margin: 8px;
+  color: white;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+.contact-icon {
+  height: 30px;
+  width: 30px;
+  fill: white;
 }
