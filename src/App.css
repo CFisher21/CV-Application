@@ -73,7 +73,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 .editableInput {
   font-size: 18px;
   color: white;
-  width: 100%;
 }
 
 .contactHeading {
