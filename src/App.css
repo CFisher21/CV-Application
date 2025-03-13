@@ -1,3 +1,22 @@
+input[type="text"], input[type="tel"], input[type="email"]  {
+  line-height: 1; 
+  padding: 0; 
+  border: none; 
+  outline: none; 
+  background: transparent; 
+  font-family: inherit; 
+  text-align: inherit; 
+  vertical-align: middle; 
+  margin-left: 8px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
+  border: 2px solid red; 
+  border-radius: 4px;
+  outline: none; 
+}
+
+
 .profilePicture {
   width: 300px;
   height: 300px;
@@ -27,7 +46,7 @@
   flex-direction: column;
   width: 100%;
   padding: 16px;
-  padding-left: 32px;
+  margin-left: 32px;
 }
 
 .content {
@@ -40,16 +59,24 @@
 .contactGroup {
   display: flex;
   align-items: center;
-  margin: 8px;
+  margin-top: 16px;
   color: white;
+  flex: 1;
 }
 
-.contactGroup > p {
+.contactGroupSpan {
   margin-left: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.editableInput {
+  font-size: 18px;
+  color: white;
+  width: 100%;
 }
 
 .contactHeading {
-  margin: 8px;
   color: white;
   text-decoration: underline;
   font-size: 32px;
@@ -58,5 +85,5 @@
 .contact-icon {
   height: 30px;
   width: 30px;
-  fill: white;
+  margin-right: 8px;
 }
