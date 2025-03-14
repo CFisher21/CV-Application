@@ -41,7 +41,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   background-color: white;
 }
 
-.contact {
+.contact, .education {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -56,7 +56,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   height: 1600px;
 }
 
-.contactGroup {
+.leftColumnGroup {
   display: flex;
   align-items: center;
   margin-top: 16px;
@@ -64,10 +64,28 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   flex: 1;
 }
 
-.contactGroupSpan {
+.eduColumnGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  color: white;
+  flex: 1;
+}
+
+.degree {
+  margin-left: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactGroupSpan, .educationGroupSpan {
   margin-left: 8px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.educationGroupSpan {
+  margin-bottom: 4px;
 }
 
 .editableInput {
@@ -75,7 +93,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   color: white;
 }
 
-.contactHeading {
+.leftColumnHeading {
   color: white;
   text-decoration: underline;
   font-size: 32px;
