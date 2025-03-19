@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EditableField from './EditableField';
 
-function ExpandableList({ initialValue = [] }) {
+function ExpandableList({ initialValue = [] , buttonName, listItemName}) {
     const [items, setItems] = useState(initialValue);
 
     // Function to update a specific list item
@@ -13,7 +13,7 @@ function ExpandableList({ initialValue = [] }) {
 
     // Function to add a new list item
     const addListItem = () => {
-        setItems([...items, `New Skill ${items.length + 1}`]); 
+        setItems([...items, `New ${listItemName} ${items.length + 1}`]); 
     };
 
     // Function to remove a specific list item
@@ -37,7 +37,7 @@ function ExpandableList({ initialValue = [] }) {
                     </li>
                 ))}
             </ul>
-            <button className="addSkill" onClick={addListItem}>Add Skill</button>
+            <button className="addSkill" onClick={addListItem}>{buttonName}</button>
         </>
     );
 }

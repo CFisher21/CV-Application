@@ -18,12 +18,16 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 
 
 .profilePicture {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   border: 4px solid white;
   object-fit: cover;
-  margin-top: 60px;
+  transition: filter 0.3s ease;
+}
+
+.profilePicture:hover {
+  filter: grayscale(100%) brightness(70%);
 }
 
 .LeftColumn {
@@ -41,12 +45,61 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   background-color: white;
 }
 
-.contact, .education, .skills {
+.change {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.profileLabel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 32px;
+}
+
+.profile:hover .profilePicture {
+  filter: grayscale(100%) brightness(70%);
+}
+
+.profile:hover .change {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.contact, .education, .skills, .language {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 16px;
   margin-left: 32px;
+  margin-top: 32px;
 }
 
 .content {
@@ -78,7 +131,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 }
 
 .contactGroupSpan {
-  margin-left: 8px;
   font-size: 18px;
   cursor: pointer;
 }
@@ -86,11 +138,19 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 .educationGroupSpan {
   margin-bottom: 4px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.languageGroupSpan {
+  font-size: 20px;
+  color: white;
+  margin-top: 8px;
 }
 
 .editableInput {
   font-size: 18px;
   color: white;
+  margin: 0;
 }
 
 .leftColumnHeading {
@@ -106,10 +166,14 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 }
 
 .listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   list-style-type: none;
   color: white;
   font-size: 16px;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 .listItem > span {
@@ -130,9 +194,8 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   font-weight: 600;
 }
 
-.listItem {
-  display: flex;
-  flex-direction: row;
+.deleteBtn:hover {
+  scale: 1.5;
 }
 
 .listItem:hover .deleteBtn {
