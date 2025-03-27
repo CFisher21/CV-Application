@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function EditableField({ initialValue, onSave, className, maxLength, type}) {
+function EditableField({ initialValue, onSave, className, maxLength, type, side}) {
     const [value, setValue] = useState(initialValue);
     const [editing, setEditing] = useState(false);
     const handleKeyDown = (e) => {
@@ -18,7 +18,7 @@ function EditableField({ initialValue, onSave, className, maxLength, type}) {
         {editing ? (
           <input
             type={type}
-            className='editableInput'
+            className={side}
             maxLength={maxLength}
             value={value}
             onChange={(e) => setValue(e.target.value)}

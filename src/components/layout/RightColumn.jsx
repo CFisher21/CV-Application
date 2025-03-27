@@ -1,9 +1,10 @@
-const RightColumn = ({name, jobTitle}) => {
+import Name from '../resume/Name'
+
+const RightColumn = () => {
     return (
-    <div className="RightColumn">
-        <h1>{name}</h1>
-        <h2>{jobTitle}</h2>
-    </div>
+        <div className="RightColumn">
+            <Name/>
+        </div>
     )
     
 }

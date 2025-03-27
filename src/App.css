@@ -40,7 +40,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 
 .RightColumn {
   display: flex;
-  justify-content: center;
   width: 70%;
   background-color: white;
 }
@@ -98,8 +97,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   flex-direction: column;
   width: 100%;
   padding: 16px;
-  margin-left: 32px;
-  margin-top: 32px;
+  margin: 32px;
 }
 
 .content {
@@ -147,7 +145,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   margin-top: 8px;
 }
 
-.editableInput {
+.left {
   font-size: 18px;
   color: white;
   margin: 0;
@@ -205,10 +203,33 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 .addSkill {
   font-size: 20px;
   color: white;
-  width: 100px;
   background-color: transparent;
   border: 2px solid white;
   outline: none;
   cursor: pointer;
   margin-top: 8px;
+}
+
+.fullName {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.firstName, .lastName {
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.firstName {
+  color: #3b3b3b;
+  margin-right: 16px;
+}
+
+.lastName {
+  color: #163853;
+}
+
+.name {
+  margin-left: 100px;
 }

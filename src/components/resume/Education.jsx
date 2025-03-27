@@ -13,9 +13,9 @@ const Education = () => {
     <div className="education">
         <h3 className="leftColumnHeading">Education</h3>
         <div className="eduColumnGroup">
-            <EditableField initialValue={eduYear} onSave={setEduYear} className={className} type={'text'}/>
-            <EditableField initialValue={school} onSave={setSchool} className={className} type={'text'}/>
-            <EditableField initialValue={degree} onSave={setDegree} className={degreeClass} type={'text'} />
+            <EditableField initialValue={eduYear} onSave={setEduYear} className={className} type={'text'} side={'left'}/>
+            <EditableField initialValue={school} onSave={setSchool} className={className} type={'text'} side={'left'}/>
+            <EditableField initialValue={degree} onSave={setDegree} className={degreeClass} type={'text'} side={'left'}/>
         </div>
     </div>
     )

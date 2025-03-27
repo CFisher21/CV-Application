@@ -30,6 +30,7 @@ function ExpandableList({ initialValue = [] , buttonName, listItemName}) {
                             initialValue={item}
                             onSave={(newValue) => updateItem(index, newValue)}
                             className="editable-item"
+                            side={'left'}
                             maxLength={50}
                             type="text"
                         />
