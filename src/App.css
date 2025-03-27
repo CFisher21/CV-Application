@@ -1,13 +1,8 @@
 input[type="text"], input[type="tel"], input[type="email"]  {
-  line-height: 1; 
   padding: 0; 
   border: none; 
   outline: none; 
   background: transparent; 
-  font-family: inherit; 
-  text-align: inherit; 
-  vertical-align: middle; 
-  margin-left: 8px;
 }
 
 input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
@@ -96,8 +91,8 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 16px;
-  margin: 32px;
+  padding: 16px 32px 16px 32px;
+  margin: 16px;
 }
 
 .content {
@@ -149,6 +144,15 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
   font-size: 18px;
   color: white;
   margin: 0;
+} 
+
+.right-name {
+  font-size: 80px;
+  color: black;
+  margin: 0;
+  width: 60%;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .leftColumnHeading {
@@ -217,13 +221,15 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 }
 
 .firstName, .lastName {
-  font-size: 64px;
+  font-size: 80px;
   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 }
 
 .firstName {
   color: #3b3b3b;
   margin-right: 16px;
+  font-weight: 500;
 }
 
 .lastName {
@@ -232,4 +238,19 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 
 .name {
   margin-left: 100px;
+}
+
+.jobTitle {
+  font-size: 38px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.right-jobTitle {
+  font-size: 38px;
+  color: black;
+  margin: 0;
+  width: 80%;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
