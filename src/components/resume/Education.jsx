@@ -12,6 +12,7 @@ const Education = () => {
     return(
     <div className="education">
         <h3 className="leftColumnHeading">Education</h3>
+        <hr className='leftHr'></hr>
         <div className="eduColumnGroup">
             <EditableField initialValue={eduYear} onSave={setEduYear} className={className} type={'text'} side={'left'}/>
             <EditableField initialValue={school} onSave={setSchool} className={className} type={'text'} side={'left'}/>

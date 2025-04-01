@@ -12,7 +12,7 @@ const Name = () => {
                 <EditableField initialValue={firstName} onSave={setFirstName} className={'firstName'} side={'right-name'} type={'text'} />
                 <EditableField initialValue={lastName} onSave={setLastName} className={'lastName'} side={'right-name'} type={'text'}/>
             </div>
-            <EditableField initialValue={jobTitle} onSave={setJobTitle} className={'jobTitle'} side={'right-jobTitle'} type={'text'}/>
+            <EditableField initialValue={jobTitle} onSave={setJobTitle} className={'jobTitleHeader'} side={'right-jobTitle'} type={'text'}/>
         </div>
     )
 }
