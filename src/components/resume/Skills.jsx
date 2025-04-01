@@ -5,7 +5,7 @@ const Skills = () => {
     <div className="skills">
         <h3 className="leftColumnHeading">Skills</h3>
         <hr className='leftHr'></hr>
-        <ExpandableList buttonName={'Add Skill'} listItemName={'Skill'}/>
+        <ExpandableList side={'left'} deleteClass={'deleteBtn'} listItemClass={'listItem'} buttonName={'Add Skill'} listItemName={'Skill'} buttonClass={'addSkill'}/>
     </div>
     )
 }

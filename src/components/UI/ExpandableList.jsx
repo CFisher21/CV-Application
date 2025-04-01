@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EditableField from './EditableField';
 
-function ExpandableList({ initialValue = [] , buttonName, listItemName}) {
+function ExpandableList({ initialValue = [] , buttonName, listItemName, buttonClass, listItemClass, deleteClass, side}) {
     const [items, setItems] = useState(initialValue);
 
     // Function to update a specific list item
@@ -25,20 +25,20 @@ function ExpandableList({ initialValue = [] , buttonName, listItemName}) {
         <>
             <ul className="skillsList">
                 {items.map((item, index) => (
-                    <li key={index} className="listItem">
+                    <li key={index} className={listItemClass}>
                         <EditableField
                             initialValue={item}
                             onSave={(newValue) => updateItem(index, newValue)}
                             className="editable-item"
-                            side={'left'}
+                            side={side}
                             maxLength={50}
                             type="text"
                         />
-                        <button className="deleteBtn" onClick={() => removeItem(index)}>X</button>
+                        <button className={deleteClass} onClick={() => removeItem(index)}>X</button>
                     </li>
                 ))}
             </ul>
-            <button className="addSkill" onClick={addListItem}>{buttonName}</button>
+            <button className={buttonClass} onClick={addListItem}>{buttonName}</button>
         </>
     );
 }
