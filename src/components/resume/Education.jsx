@@ -5,7 +5,7 @@ const Education = () => {
 
     const className = 'educationGroupSpan'
     const [school, setSchool] = useState('Keyin College')
-    const [eduYear, setEduYear] = useState('2021 - 2024')
+    const [eduYear, setEduYear] = useState('2021 - 2022')
     const [degree, setDegree] = useState('Software Development')
     const degreeClass = 'degree'
 

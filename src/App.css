@@ -284,7 +284,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 
 .name {
   margin-top: 64px;
-  margin-bottom: 88px;
+  margin-bottom: 92px;
 }
 
 .summaryTitle, .workTitle, .certTitle {
@@ -302,33 +302,54 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
 }
 
 .jobContainer {
+  margin-top: 16px;
   position: relative;
-  border: 2px solid black;
-  margin: 1rem 0;
-  padding: 1rem; 
 }
 
 .jobTitleContainer {
   display: flex;
   justify-content: space-between; 
   align-items: center;
+  width: 100%;
 }
 
 .jobTitle {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  max-width: 800px;
 }
 
 .company, .position {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 8px;
   font-weight: 600;
+  width: 100%;
+  min-width: 300px;
+  max-width: 800px;
+}
+
+.position {
+  font-size: 16px;
 }
 
 textarea {
   resize: none;
   flex: 1;
+  height: auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+textarea:focus {
+  border: 2px solid red;
+  border-radius: 4px;
+  outline: none;
 }
 
 .addJob, .addBullet, .addCert {
@@ -357,6 +378,10 @@ textarea {
 
 .work:hover .deleteBtn3 {
   display: flex;
+}
+
+.work {
+  margin-top: 16px;
 }
 
 .certification:hover .deleteBtn2 {
@@ -397,9 +422,14 @@ textarea {
 hr {
   height: 4px;
   background-color:#163853;
+  border: #163853;
 }
 
 .leftHr {
   background-color: white;
 }
 
+.workYear {
+  outline: none;
+  border: none;
+}

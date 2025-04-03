@@ -11,6 +11,8 @@ function ExpandableList({ initialValue = [] , buttonName, listItemName, buttonCl
         setItems(updatedItems);
     };
 
+    console.log(items)
+
     // Function to add a new list item
     const addListItem = () => {
         setItems([...items, `New ${listItemName} ${items.length + 1}`]); 

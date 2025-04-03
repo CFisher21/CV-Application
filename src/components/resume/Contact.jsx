@@ -3,10 +3,10 @@ import EditableField from '../UI/EditableField'
 
 const Contact = () => {
     const className = 'contactGroupSpan'
-    const [number, setNumber] = useState('1-234-567-8910')
-    const [email, setEmail] = useState('example@email.com')
-    const [location, setLocation] = useState('Town, City, Country')
-    const [website, setWebsite] = useState('www.examplesite.com')
+    const [number, setNumber] = useState('403-305-7744')
+    const [email, setEmail] = useState('fishercody23@gmail.com')
+    const [location, setLocation] = useState('Cochrane, Alberta')
+    const [website, setWebsite] = useState('https://github.com/CFisher21')
 
     
     return (

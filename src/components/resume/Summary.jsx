@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const Summary = () => {
 
-    const [text, setText] = useState('Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corrupti architecto dignissimos quis nisi atque voluptatum? Consectetur nisi quasi repellat accusamus perferendis quaerat. Ducimus necessitatibus reiciendis aliquid sed sit pariatur?')
+    const [text, setText] = useState('Enthusiastic Full Stack Developer with a 2-year diploma in Software Development from Keyin College. After nearly two years as an EWP Floor Designer, ready to contribute to innovative software solutions in a full-time development role. Adept at building dynamic, responsive web applications, I have developed hands-on projects such as a candidate search engine—and a to-do app. Eager to transition into a dedicated software development role, I bring a strong foundation in both front-end and back-end technologies, creative problem-solving skills, and a keen eye for detail.')
 
     return(
         <div className="summary">
